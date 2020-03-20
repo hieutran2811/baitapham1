@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 05</title>
+</head>
+<body>
+<script>
+    let sao =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chom_sao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function timChomSao(a) {
+        for (let i=0; i<7; i++){
+            if (a === sao[i]){
+                return chom_sao[i];
+            }
+        }
+        return "Không tìm thấy ngôi sao!"
+    }
+    let txt = prompt("Nhập vào tên 1 ngôi sao");
+    timChomSao(txt);
+    document.write(timChomSao(txt));
+</script>
+</body>
+</html>
